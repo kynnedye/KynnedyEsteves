@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kynnedy's frontend portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    <script src="https://kit.fontawesome.com/9ae4f8d271.js" crossorigin="anonymous"></script>
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-code"></i>
+        </div>
+        <button class="nav-toggle" aria-label="toggle-navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link"href ="#home">Home </a></li>
+                <li class="nav__item"><a class="nav__link" href ="#about">About me</a></li>
+                <li class="nav__item"><a class="nav__link" href ="#skills">Skills</a></li>
+                <li  class="nav__item"><a class="nav__link" href ="#work">My work</a></li>
+                <li href= "#contact" class="nav__item"><a class="nav__link" href ="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">Hi, I am <strong>Kynnedy Esteves</strong></h1>
+        <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+        <div class="cta-area">
+            <a href="#work" >
+                <p class="cta">Check out my work</p>
+                <i class="fas fa-chevron-circle-down"></i>
+
+            </a>
+        </div>
+    </section>
+     <!-- my work/portfolio -->
+     <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+       
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <div class="img-wrap">
+                    <div class="descrip-wrap">
+                        <h3>Burger World</h3>
+                        <p class="img-description">This is a food delivery website created with html, css, and JavaScript. I utilized local storage and created my own mini database.</p>
+                       <div class="btn">
+                        <a class="link" href="https://kynnedye.github.io/BurgerDelivery/" target="_blank" class="live"> Site</a>
+                        <a class="link" href="https://github.com/kynnedye/BurgerDelivery" target="_blank" class="live"> Code</a>   
+                       </div>
+                    </div>
+                    <img src="/images/burgerpic.png" alt="" >
+                    
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="img-wrap">
+                    <div class="descrip-wrap">
+                        <h3>Name of project</h3>
+                        <p class="img-description">This is a description of the project</p>
+                        <div class="btn">
+                            <button class="live"> Site</button>
+                            <button class="code">Code</button>
+                       </div>
+                    </div>
+                    <img src="/images/dashh.jpeg" alt="" class="dashboard">
+
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="img-wrap">
+                    <div class="descrip-wrap">
+                        <h3>Pacman</h3>
+                        <p class="img-description">This was a very fun exercise where I created the classic game Pacman. I used html, css, and Javascript to put my skills to the test.</p>
+                        <div class="btn">
+                            <a class="link" href="https://codepen.io/kynnedye/pen/XWgGQvL" target="_blank" class="live"> Visit</a>
+                       </div>
+                    </div>
+                    <img src="images/pacman.jpeg"  />
+                </div>    
+            </div>
+            <div class="portfolio-item">
+                <div class="img-wrap">
+                    <div class="descrip-wrap">
+                        <h3>Javascriptmas </h3>
+                        <p class="img-description">This was a coding challenge I participated in. Every day in Decemeber, I completed a new christmas themed JavaScript challenge. </p>
+                        <div class="btn">
+                            
+                            <a class="link" href="project.html" class="live"> View</a>
+                       </div>
+                    </div>
+                    <img src="/images/santasign.png"  />
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="img-wrap">
+                    <div class="descrip-wrap">
+                        <h3>Todo list</h3>
+                        <p class="img-description">This is a classic todo list app I made utilizing html, css, and vanilla Javascript.</p>
+                        <div class="btn">
+                            <a class="link" href="https://codepen.io/kynnedye/pen/oNwBLEQ" class="live"> View</a>
+                       </div>
+                    </div>
+                    <img src="images/todo.jpeg" alt="" class="random">
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="img-wrap">
+                    <div class="descrip-wrap">
+                        <h3>Name of project</h3>
+                        <p class="img-description">This is a description of the project</p>
+                        <div class="btn">
+                            <button class="live"> Site</button>
+                            <button class="code">Code</button>
+                       </div>
+                    </div>
+                    <img src="/images/blackjportfolio.jpeg" alt="" class="blackjack">
+                </div>
+            </div>
+        </div>
+   </section>
+    <!-- skill sectiion -->
+    <section class="my-skills" id="skills">
+        <h2 class="section__title section__title--skills">My Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <i class="fab fa-html5"></i>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js-square"></i>
+            </div>
+            <div class="skill">
+                <div class="skill">
+                    <i class="fab fa-sass"></i>
+                </div>
+            </div>
+            <div class="skill">
+                <i class="fab fa-react"></i>
+            </div>
+            <div class="skill">
+                <i class="fab fa-figma"></i>
+            </div>
+        </div>
+    </section>
+    <!-- about me section -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Developer who is obsessed with learning</p>
+        <div class="about-container">
+            <div class="about-me__body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="about-me__img">
+                <img src="/images/coder3.svg" alt="graphic of a woman on a laptop">
+            </div>
+        </div>
+    </section>
+   
+   
+
+   <!-- Footer -->
+   <footer class="footer">
+    <!-- replace with your own email address -->
+    <a href="gmail.com" class="footer__link">kynnedyesteves@gmail.com</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://codepen.io/your-work">
+                <i class="fab fa-codepen"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/kynnedy-esteves-683276215/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://twitter.com/mothercoder">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/kynnedye">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+        
+
+        <script src="/main.js"></script>
+    
+</body>
+</html>
