@@ -272,9 +272,13 @@ img{
 
 
 .about-me__img{
-    max-width: 600px;
+    max-width: 650px;
     margin: 0;
     
+}
+.about-me__body p{
+    font-size:15px;
+    font-weight: bold;
 }
 .about-container{
     margin-top: 2em;
@@ -287,6 +291,8 @@ img{
     .about-container{
         display: flex;
         justify-content: center;
+        align-items: center;
+        text-align: left;
         margin-top: 0;
     }
     
