@@ -17,7 +17,7 @@ html{
     --fw-bold: 900;
     
     --clr-light: #fff;
-    --clr-dark: #222946;
+    --clr-dark: #170e25;
     --clr-accent: #6d17cb;
     
     --fs-h1: 3rem;
@@ -39,7 +39,7 @@ html{
 }
 body{
     color: var(--clr-light);
-    background: white;
+    background: var(--clr-accent);
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     margin: 0;
@@ -67,24 +67,6 @@ a{
     color: var(--clr-light);
     text-decoration: none;
 }
-.section__title--intro{
-    font-weight: var(--fw-reg);
-    font-size: 100px;
-    letter-spacing: 1px;
-    text-align: center;
-}
-strong{
-    font-weight: var(--fw-bold);
-    display: block;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-   padding-left: 1em;
-   padding-right: 1em;
-   background-color: rgba(76, 0, 255, 0.3);
-  
-}
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
@@ -98,12 +80,42 @@ header{
     color: rgb(155, 155, 155);
     
 }
+.section__title--intro{
+    font-weight: var(--fw-reg);
+    font-size: 100px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+@media (max-width:600px) {
+    .section__title--intro{
+        font-size: 60px;
+    }
+    .section__subtitle--intro{
+        font-size: 14px;
+        letter-spacing: 8px;
+
+    }
+}
+strong{
+    font-weight: var(--fw-bold);
+    display: block;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+   padding-left: 1em;
+   padding-right: 1em;
+   background-color: rgba(76, 0, 255, 0.3);
+  
+}
+
 
 .section__subtitle--about {
     background: var(--clr-accent);
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin: 0 auto 1em;
+    color: white;
     max-width: 600px;
 }
 .intro{
@@ -113,9 +125,7 @@ header{
     align-items: center;
     justify-content: center;
     margin-top: 0;
-    /* background-image: url(images/portfoliointro2.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     width: 100%;
     position: absolute;
     top:10vh;
@@ -254,6 +264,7 @@ background-image: linear-gradient(316deg, #4062bb 0%, #5200ae 74%);
 .logo{
    font-size: 1.5em;
    padding:.5em;
+   color: var(--clr-accent);
    
     
 }
@@ -357,6 +368,8 @@ img{
 
 .skills{
     display: grid;
+ 
+    position: relative;
     grid-template-columns: repeat(3,100px);
     justify-content: center;
     align-items: center;
@@ -365,7 +378,10 @@ img{
   
     
 }
-
+.my-skills-section{
+    width: 100%;
+    background: var(--clr-light);
+}
 
 .section__title--skills{
     margin-bottom: 2em;
@@ -385,15 +401,24 @@ img{
     background: #947fe0e1;
     margin-bottom: 1em;
     margin-right: 1em;
-    padding: 1em;
+    padding: 1.5em 0;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.3);
 }
 .skill i{
     font-size: 3em;
-    color: var(--clr-accent);
+    color: var(--clr-light);
     
     
 }
-@media (min-width:550px){
+.squares,
+.squares2{
+    display: none;
+}
+section{
+    margin-bottom: 6em;
+}
+@media (min-width:700px){
     .skills{
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
@@ -403,6 +428,22 @@ img{
     .skill i{
         font-size: 5em;
         justify-content: center;
+    }
+    .squares{
+        width: 200px;
+        position: absolute;
+        top:810px;
+        overflow: hidden;
+       right:  -20px;
+    }
+    .squares2{
+        width: 200px;
+        position: absolute;
+        left:-20px;
+    }
+    .squares,
+    .squares2{
+        display: block;
     }
     
 }
@@ -451,6 +492,9 @@ img{
 .section__title--work{
     margin-bottom: 1em;
     color: var(--clr-accent);
+}
+.my-work{
+    background: var(--clr-accent);
 }
 .section__title--work::after {
     content: '';
@@ -537,7 +581,7 @@ img{
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(129, 11, 74, 0.726);
+    background: rgba(109, 23, 203, .4);
     color: #fff;
     visibility: hidden;
     opacity: 0;
@@ -574,11 +618,12 @@ img{
 
 
 .footer{
-    background: var(--clr-dark);
-    background-image: url(images/portfoliointro2.png);
+
+    
     padding-bottom:2em;
     padding-top: 3em;
 }
+
 .footer__link{
     font-weight: var(--fw-bold);
     font-size: 1.2em;
@@ -606,7 +651,9 @@ img{
 
 .link:hover,
 .link:focus{
-    background: #ee378c;
+    background: var(--clr-accent);
+    color: var(--clr-light);
     transform: scale(1.2);
 }
+
 
