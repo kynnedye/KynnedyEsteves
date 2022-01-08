@@ -10,7 +10,7 @@ html{
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-primary: 'Titillium Web', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
     
     --fw-reg: 300;
@@ -263,7 +263,7 @@ img{
 .about-me{
     background: var(--clr-light);
     color: var(--clr-dark);
-    max-width: 800px;
+    max-width: 900px;
     width: 90%;
     margin: 0 auto;
     margin-bottom: 6em;
@@ -277,8 +277,8 @@ img{
     
 }
 .about-me__body p{
-    font-size:15px;
-    font-weight: bold;
+    font-size:20px;
+    
 }
 .about-container{
     margin-top: 2em;
@@ -426,7 +426,7 @@ img{
 
 .footer{
     background: var(--clr-dark);
-    background-image: url(/images/portfolio\ intro2.png);
+    background-image: url(images/portfoliointro2.png);
     padding-bottom:2em;
     padding-top: 3em;
 }
