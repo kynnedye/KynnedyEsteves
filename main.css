@@ -259,12 +259,14 @@ background-image: linear-gradient(316deg, #4062bb 0%, #5200ae 74%);
 
 
 
-
+header{
+    background:var(--clr-accent);
+}
 
 .logo{
    font-size: 1.5em;
    padding:.5em;
-   color: var(--clr-accent);
+   color: var(--clr-light);
    
     
 }
@@ -345,7 +347,7 @@ img{
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-light);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -412,7 +414,10 @@ img{
     
 }
 .squares,
-.squares2{
+.squares2,
+.squares3,
+.squares4,
+.squares5{
     display: none;
 }
 section{
@@ -429,23 +434,38 @@ section{
         font-size: 5em;
         justify-content: center;
     }
-    .squares{
-        width: 200px;
+    .squares,
+    .squares2,
+    .squares3,
+    .squares4,
+    .squares5{
         position: absolute;
+        width: 200px;
+        display: block;
+    }
+    
+    .squares{
+        
+      
         top:810px;
         overflow: hidden;
        right:  -20px;
     }
     .squares2{
-        width: 200px;
-        position: absolute;
+       
         left:-20px;
     }
-    .squares,
-    .squares2{
-        display: block;
+    .squares3{
+        right:  -20px;
     }
-    
+    .squares4{
+       
+        left:-20px;
+    }
+    .squares5{
+        right:  -20px;
+    }
+   
 }
 
 /* about me section */
@@ -462,9 +482,13 @@ section{
 
 
 .about-me__img{
-    max-width: 650px;
-    margin: 0;
+    width: 300px;
+    margin: 0 auto;
+   
     
+}
+.about-me__img img{
+    width: 100%;
 }
 .about-me__body p{
     font-size:20px;
@@ -473,17 +497,22 @@ section{
 .about-container{
     margin-top: 2em;
 }
-@media (min-width:650px) {
+@media (min-width:850px) {
     .about-me__body{
         width: 40%;
+        
         margin-top: 2.8em;
     }
     .about-container{
         display: flex;
         justify-content: center;
+        
         align-items: center;
         text-align: left;
         margin-top: 0;
+    }
+    .about-me__img{
+        margin: 0 auto;
     }
     
 }
