@@ -10,7 +10,7 @@ html{
 /* Custom Properties, update these for your own design */
 
 :root {
-    --ff-primary: 'epilogue', sans-serif;
+    --ff-primary: 'poppins', sans-serif;
     --ff-secondary: 'poppins', monospace;
     
     --fw-reg: 300;
@@ -18,7 +18,7 @@ html{
     
     --clr-light: #fff;
     --clr-dark: #170e25;
-    --clr-accent: #6d17cb;
+    --clr-accent: #30F6BA;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -74,7 +74,7 @@ a{
 .section__subtitle--intro{
     text-transform: uppercase;
     letter-spacing: 10px;
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 0;
@@ -85,7 +85,7 @@ a{
     font-weight: var(--fw-reg);
     font-size: 80px;
     letter-spacing: 1px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -121,18 +121,32 @@ header{
     color: white;
     max-width: 600px;
 }
+
 .intro{
     height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 0;
+    
+   margin-top: 4em;
     
     width: 100%;
     position: absolute;
     top:10vh;
     
+}
+.introduction{
+    font-size: 18px;
+    margin-bottom: 1em;
+    color: var(--clr-accent);
+}
+.cta-area{
+   
+   margin-top: 2em;
+   border: 2px solid #30F6BA;
+   padding: 1em 1.5em;
+   border-radius: 4px;
+   z-index: 2;
 }
 .area{
     background-color: #4062bb;
@@ -456,21 +470,21 @@ img{
       
         top:810px;
         overflow: hidden;
-       right:  -20px;
+       right:  0px;
     }
     .squares2{
        
         left:-20px;
     }
     .squares3{
-        right:  -20px;
+        right:  0px;
     }
     .squares4{
        
         left:-20px;
     }
     .squares5{
-        right:  -20px;
+        right:  0px;
     }
    
 }
@@ -483,7 +497,7 @@ img{
     max-width: 900px;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 25em;
+    margin-bottom: 5em;
     border-radius: 3px;
 }
 
@@ -613,7 +627,7 @@ img{
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(109, 23, 203, .4);
+    background:rgba(48, 246, 186, .5);
     color: #fff;
     visibility: hidden;
     opacity: 0;
@@ -623,25 +637,14 @@ img{
     justify-content: center;
     align-items: center;
   
-    /* transition effect. not necessary */
+    
     transition: opacity .2s, visibility .2s;
 }
 .live{
       margin-right: 1em;
 }
-.btn button{
-      padding: .5em 2em;
-     border: none;
-      background: var(--clr-light);
-      color: var(--clr-dark);
-      font-weight: bold;
-      transition: .5s;
-}
-.btn button:hover{
-      background: var(--clr-accent);
-      border: none;
-      transform: scale(1.2);
-  }
+
+
   .img-wrap:hover .btn {
     visibility: visible;
     opacity: 1;
