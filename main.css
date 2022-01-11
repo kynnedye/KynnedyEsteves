@@ -462,6 +462,7 @@ img{
     .squares5{
         position: absolute;
         width: 200px;
+        opacity: .4;
         display: block;
     }
     
@@ -709,5 +710,52 @@ img{
     color: var(--clr-light);
     transform: scale(1.2);
 }
+
+.my-portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.my-portfolio__item{
+    display: flex;
+    align-items: center;
+    margin-top: 5.5em;
+}
+.my-portfolio__img{
+    width: 500px;
+    border-radius: 4px;
+   
+}
+.my-portfolio__img img{
+    border-radius: 4px;
+}
+.my-portfolio__description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    width: 50%;
+    max-width: 400px;
+    margin-left: -4em;
+}
+.portfolio-name{
+    font-size: 1.5rem;
+}
+.portfolio-description{
+    font-size: 1rem;
+    border-radius: 4px;
+    background: rgba(51, 0, 109, .8) ;
+    padding: 1em;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    
+}
+.left{
+    margin-right: -4em;
+    z-index: 1;
+    align-items: flex-start;
+    text-align: left;
+}
+
 
 
