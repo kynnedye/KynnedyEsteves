@@ -886,4 +886,20 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:white; }
+[type="submit"]:hover { background:rgba(48, 246, 186, .5) }
+.contact-socials{
+    
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: .75em;
+    position: unset;
+    width: 200px;
+    position: relative;
+   right: 28px;
+   display: none;
+   
+}
+#message{
+    margin-bottom: 1em;
+}
