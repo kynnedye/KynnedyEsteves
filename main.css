@@ -519,7 +519,7 @@ img{
 
 
 .about-me__img{
-    width: 300px;
+    width: 200px;
     margin: 0 auto;
   
     
@@ -547,9 +547,15 @@ img{
         align-items: center;
         text-align: left;
         margin-top: 0;
+        
+    }
+    .about-me__body{
+        font-size: .7rem;
     }
     .about-me__img{
         margin: 0 auto;
+        width: 300px;
+        
     }
     
 }
@@ -568,104 +574,19 @@ img{
     margin-bottom: 2em;
 }
 
-.img-wrap{
-    display: flex;
-    width:70%;
-    max-width:600px;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 2em;
-    background: var(--clr-light);
-    padding: 1em;
-    min-height: 250px;
-    
-    border-radius: 3px;
-    box-shadow: var(--bs);
-    animation-duration: 2s;
-    min-width: 200px;
-    
 
-}
 
-.descrip-wrap{
-    color: var(--clr-dark);
-    border-right: 1px solid black;
-    padding-right: 3em;
-   
-}
-.img-description{
-    color: var(--clr-dark);
-   
-}
-.img-wrap img{
-    width: 100%;
-    border-radius: 3px;
-    margin-left: 3em;
-    min-width: 250px;
-    max-width: 250px;object-fit: cover;
 
-    
-}
 
-@media (max-width: 900px){
-    .img-wrap{
-        flex-direction: column;
-        
-    }
-    .descrip-wrap{
-        border-right: none;
-        margin: 0 auto;
-        padding: 0;
-    }
-    .img-wrap img{
-        margin: 0 auto;
-    }
-}
 
-@media (max-width: 600px){
-    .img-wrap img{
-        max-width: 150px;
-        min-width: 150px;
-    }
-}
 /* portfolio area */
 .my-work{
     background-color: #4062bb;
     background-image: linear-gradient(360deg,#5200ae    0%, #4062bb 54%);
 }
 
-.img-wrap{
-    position: relative; 
-} 
-.btn {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background:rgba(48, 246, 186, .5);
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    margin: -.1em 0;
-    padding: 2em 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    
-    transition: opacity .2s, visibility .2s;
-}
-.live{
-      margin-right: 1em;
-}
 
 
-  .img-wrap:hover .btn {
-    visibility: visible;
-    opacity: 1;
-    overflow: hidden;
-  }
 
 
 .footer{
@@ -708,8 +629,10 @@ img{
    
     position: fixed;
     margin-top: 20em;
+    margin-left: -3em;
     
 }
+
 .social-list li a{
     
     font-weight: var(--fw-bold);
