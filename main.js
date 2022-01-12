@@ -21,5 +21,5 @@ contactBtn.addEventListener("click",function(){
     message.textContent = "Get in touch"
     socialBtn.style.display = "flex"
     social.style.display = "none"
-    location.href="index.html#form"
+    location.href="#form"
 })
