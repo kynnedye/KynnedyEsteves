@@ -374,7 +374,7 @@ img{
 .hamburger {
     display: block;
     position: fixed;
-    right:20px;
+    right:40px;
 }
 
 .hamburger,
@@ -430,15 +430,17 @@ img{
     content: '';
     display: block;
     width: 2em;
-    height: 1px;
+    height: 2px;
+
     margin: 0.5em auto 1em;
     background: var(--clr-accent);
-    opacity: 0.25;
+    opacity: 0.75;
 }
 .skill{
     background: #947fe0e1;
     margin-bottom: 1em;
     margin-right: 1em;
+    border: 1px solid var(--clr-accent);
     padding: 1.5em 0;
     border-radius: 4px;
     box-shadow: 2px 2px 4px rgba(0,0,0,.3);
@@ -690,6 +692,7 @@ img{
 }
 .my-portfolio__img img{
     border-radius: 4px;
+    transition: .5s;
 }
 .my-portfolio__description{
     display: flex;
@@ -700,6 +703,10 @@ img{
     max-width: 400px;
     margin-left: -4em;
 }
+.my-portfolio__img:hover {
+   border: 2px solid var(--clr-accent);
+}
+
 .portfolio-name{
     font-size: 1.5rem;
 }
@@ -765,13 +772,14 @@ section{
 }
 form { 
     max-width:420px; 
+    width: 80%;
     margin:50px auto; 
     display: none;
 }
 
 .feedback-input {
-  color:white;
-  background: rgba(214, 192, 255, 0.644);
+  color:black;
+  background: rgb(219, 200, 253);
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
