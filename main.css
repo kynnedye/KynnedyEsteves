@@ -155,9 +155,14 @@ header{
     margin-bottom: 1em;
     color: var(--clr-accent);
 }
+.btn-area{
+    display: flex;
+   
+}
 .cta-area{
    
    margin-top: 2em;
+   margin-right: 1em;
    border: 2px solid #30F6BA;
    padding: 1em 1.5em;
    border-radius: 4px;
@@ -167,10 +172,16 @@ header{
 .cta-area:hover{
     transform: scale(1.08);
     background: #30F6BA;
+    color: #4062bb;
    
 }
-.cta-area a:hover{
+.project-btn{
+    background: #30F6BA ;
     color: #4062bb;
+}
+.project-btn:hover{
+    background: transparent;
+    color: white;
 }
 .area{
     background-color: #4062bb;
@@ -643,11 +654,15 @@ img{
     margin-left: -3em;
     
 }
+.social-list li{
+    margin-bottom: .8em;
+}
 
 .social-list li a{
     
     font-weight: var(--fw-bold);
     font-size: 1em;
+    
    
     color: var(--clr-accent)
 }
