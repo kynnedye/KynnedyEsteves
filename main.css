@@ -192,6 +192,11 @@ background-image: linear-gradient(0deg, #5200ae  0%,  #4062bb 74%);
     
    
 }
+@media (max-width:500px) {
+   .btn-area{
+       font-size: .65rem;
+   }
+}
 
 .circles{
     position: absolute;
